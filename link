@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ln -fs ~/.dot-files/config.fish ~/.config/fish/config.fish
+ln -fs ~/.dot-files/.vimrc ~/.vimrc
