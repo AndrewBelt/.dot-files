@@ -8,7 +8,7 @@ else if test $platform = 'Darwin'
 end
 
 alias l='ls -lh'
-alias m='make'
+alias m='make -j4'
 alias c="echo -ne '\033c'"
 alias i='irb'
 alias p='pwd'
@@ -24,5 +24,6 @@ function fish_greeting
 end
 
 set -x EDITOR vim
-set -x TERM xterm
-
+#set -x CC clang
+#set -x CXX clang++
+set PATH $PATH /opt/cuda/bin
